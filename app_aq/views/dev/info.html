@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, width=device-width"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>和教育-移动端我的提问</title>
+    <link rel="stylesheet" type="text/css" href="style/common/base.css">
+    <link rel="stylesheet" type="text/css" href="style/aq/app.css">
+  </head>
+  <body class="bg_gray">
+     <!--页面头部开始-->
+     <header class="page_header bgBlue">
+        <div class="arrow_icon"><a href="javascript:void(0)" class="go_back"></a></div>
+        <h2 class="textCenter">爱提问</h2>
+     </header>
+     <!--页面头部结束-->
+     <!--主体内容开始-->
+     <article class="mainContainer aq_info" data-module="aq_info">
+        <div class="pure-g-r">
+          <!-- 列表模块开始 -->
+          <div class="list_box">
+             <div class="md_hd">
+                 <span class="fl s_txt">06月25日 18:00</span>
+             </div>
+             <div class="md_bd">
+                 <h2>老师，这道题怎么做？</h2>
+                 <a href="info.html">
+                   <img src="images/aq/image.jpg" />
+                 </a>
+             </div>
+          </div>
+          <!-- 列表模块结束 -->
+          <div class="vspace"></div>
+          <!-- 留言信息列表开始 -->
+          <div id="chat_list" class="chat_list">  
+              <ul class="chat-thread">
+                <li>Are we meeting today?</li>
+                <li>yes, what time suits you?</li>
+                <li><img src="images/aq/image.jpg"/></li>
+                <li>Are we meeting today?</li>
+              </ul>
+              <!-- 发送开始 -->
+              <div class="chat-window" style="display:none">
+                <input class="chat-window-message" value="" placeholder="本题24小时后结束"/>
+                <a href="javascript:void(0)" class="chat_pub">...</a>
+              </div>
+              <!-- 发送结束 -->
+              <!-- 已结束开始 -->
+              <div class="chat_over">
+                <a href="javascript:void(0)" class="pure-button">已结束</a>
+              </div>
+              <!-- 已结束结束 -->
+           </div>
+           <!-- 留言信息列表结束 -->
+        </div>
+     </article>
+     <!--主体内容结束-->
+     <script type="text/javascript" src="javascript/lib/zepto.min.js"></script>
+   </body>
+</html>

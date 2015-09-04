@@ -1,0 +1,22 @@
+{
+  "name":"app_aq",
+  "version":"1.0.0",
+  "description":"dev",
+  "repository": {},
+  "devDependencies": {
+    "grunt":                   "~0.4.1",
+    "grunt-contrib-concat":    "~0.3.0",
+    "grunt-contrib-uglify":    "~0.2.1",
+    "grunt-contrib-connect": "latest",
+    "grunt-contrib-copy":      "~0.4.1",
+    "grunt-contrib-clean":     "~0.5.0",
+    "grunt-contrib-watch": "~0.6.0",
+    "grunt-contrib-cssmin": "~0.5.0",
+    "grunt-contrib-htmlmin": "latest",
+    "grunt-contrib-imagemin": "~0.5.0",
+    "grunt-usemin": "latest",
+    "grunt-css-import":"latest",
+    "connect-livereload": "latest",
+    "matchdep": "latest"
+  }
+}

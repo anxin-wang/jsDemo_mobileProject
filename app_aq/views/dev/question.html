@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, width=device-width"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>和教育-移动端我的提问</title>
+    <link rel="stylesheet" type="text/css" href="style/common/base.css">
+    <link rel="stylesheet" type="text/css" href="style/aq/app.css">
+  </head>
+  <body class="bg_gray">
+     <!--页面头部开始-->
+     <header class="page_header bgBlue">
+        <div class="arrow_icon"><a href="javascript:void(0)" class="go_back"></a></div>
+        <h2 class="textCenter">爱提问</h2>
+     </header>
+     <!--页面头部结束-->
+     <!--主体内容开始-->
+     <article class="mainContainer my_question" data-module="my_question">
+        <div class="pure-g-r my_aq">
+          <form method="post" class="ClassForm" action="#">
+           <!-- 提问模块开始 -->
+           <div class="pure-u-1">
+              <img src="images/aq/image.jpg" class="res_img"/>
+           </div>
+           <textarea class="cTextarea" placeholder="每次只能提一道题，简略描述下你的问题" id="cTextarea"></textarea>
+           <a href="javascript:void(0)" class="choose_class">请选择年级和学科</a>
+           <!-- 提问模块结束 -->
+           <!-- 选择年级开始 -->
+           <div class="sel_class" id="sel_class">          
+                <h2>年级</h2>
+                <ul>
+                  <li><a href="javascript:void(0)">小学</a></li>
+                  <li><a href="javascript:void(0)">初一</a></li>
+                  <li><a href="javascript:void(0)">初二</a></li>
+                  <li><a href="javascript:void(0)">初三</a></li>
+                  <li><a href="javascript:void(0)">高一</a></li>
+                  <li><a href="javascript:void(0)">高二</a></li>
+                  <li><a href="javascript:void(0)">高三</a></li>
+                </ul>  
+                <div class="clearfix"></div>
+                 <h2>学科</h2>
+                 <ul>
+                  <li><a href="javascript:void(0)">语文</a></li>
+                  <li><a href="javascript:void(0)">数学</a></li>
+                  <li><a href="javascript:void(0)">外语</a></li>
+                  <li><a href="javascript:void(0)">物理</a></li>
+                  <li><a href="javascript:void(0)">化学</a></li>
+                  <li><a href="javascript:void(0)">生物</a></li>
+                  <li><a href="javascript:void(0)">地理</a></li>
+                </ul>
+                <div class="clearfix"></div>
+                <input type="button" value="确定" class="pure-button btn_sel" id="btn_sel"/>
+           </div>
+           <!-- 选择年级结束 -->
+           <input type="button" value="立即提问" class="pure-button submit_aq" onclick="javascript:window.location.href='list.html'" />
+          </form>
+        </div>
+     </article>
+     <!--主体内容结束-->
+     <script type="text/javascript" src="javascript/lib/zepto.min.js"></script>
+     <script type="text/javascript">
+        var flag = true;
+        /**
+         * 点击打开下拉框
+         * @param  null
+         * @return null
+         */
+        $('.choose_class').on('tap',function(){
+          if(flag){
+            $("#sel_class").show().addClass('animated fadeInDown');
+            flag = false;
+          }else{
+            $("#sel_class").hide().removeClass('animated fadeInDown');
+            flag = true;
+          }
+        });
+         /**
+         * 点击关闭下拉框
+         * @param  null
+         * @return null
+         */
+        $("#btn_sel").on('tap',function(){
+           $("#sel_class").hide().removeClass('animated fadeInDown');
+            flag = true;
+        });
+          /**
+         * 点击菜单按钮
+         * @param  null
+         * @return null
+         */
+        $("#sel_class a").on('tap',function(){
+            $(this).parent().addClass('cur').siblings().removeClass('cur');
+        });
+     </script>
+   </body>
+</html>

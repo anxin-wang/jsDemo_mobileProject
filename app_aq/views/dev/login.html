@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, width=device-width"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>和教育-移动端</title>
+    <link rel="stylesheet" type="text/css" href="style/common/base.css">
+    <link rel="stylesheet" type="text/css" href="style/user/app.css">
+  </head>
+  <body class="bgBlue">
+  	<!--主体内容开始-->
+	<article class="mainContainer login_page" data-module="login_page">
+		<div class="pure-g-r">
+			<div class="pure-u-1">
+				<h1>
+					<a href="#" class="logo"><img src="images/common/logo.jpg"/></a>
+				</h1>
+				<div class="md_login">
+					<form class="pure-form login_form" action="/users/login" method="post">
+						<fieldset class="pure-group">
+							<input type="text" class="cInput username" placeholder="手机号" name="username">
+							<input type="password" class="cInput password" placeholder="密码" name="password">
+						</fieldset>
+
+						<fieldset class="pure-group group_opt">
+							<a href="/register" class="register fl">快速注册</a>
+							<a href="/password" class="forgot_pwd fr">忘记密码？</a>
+						</fieldset>
+
+						<fieldset class="pure-group">
+							<input class="btn btnGreen btn_login" type="submit" value="登录" id="btn_login"/>
+						</fieldset>
+					</form>
+				  </div>
+			</div>
+		</div>
+	</article>
+	<!--主体内容结束-->
+	<script type="text/javascript" src="javascript/lib/zepto.min.js"></script>
+  </body>
+</html>

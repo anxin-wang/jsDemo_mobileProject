@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, width=device-width"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>上传裁切图片</title>
+    <link rel="stylesheet" type="text/css" href="style/common/base.css">
+    <link href="style/lib/jcrop/jquery.jcrop.css" rel="stylesheet" type="text/css" />
+  </head>
+<body class="bg_gray">
+ <!--页面头部开始-->
+ <header class="page_header bgBlue">
+    <div class="arrow_icon"><a href="javascript:void(0)" class="go_back"></a></div>
+    <h2 class="textCenter">爱提问</h2>
+ </header>
+<!--页面头部结束-->
+<!--主体内容开始-->
+<article class="mainContainer photo_page" data-module="photo_page">
+    <div class="wrapper">
+        <div class="pure-g mobile_demo">
+            <div class="pure-u-1">
+              <form method="post" action="upload.php" class="pure-form image_uploadForm" id="image_uploadForm">
+                    <!-- 上传图片按钮开始 -->
+                    <div class="file_box">
+                        <div class="file_item">
+                            <a href="javascript:void(0)" class="pure-button file_text"></a>
+                        </div>
+                        <input type="file" name="image_file" class="image_file" style="background:#f90;" />
+                    </div>
+                    <!-- 上传图片按钮结束 -->
+                    <div class="vspace"></div>
+                    <!-- 裁切参数和显示图层开始 -->
+                    <div class="preview_box">
+                        <div class="preview_info undis">
+                            <!-- hidden crop params -->
+                            <input type="hidden" id="file_size" name="file_size" class="file_size"/>
+                            <input type="hidden" id="file_type" name="file_type" class="file_type"/>
+                            <input type="hidden" id="file_dim" name="file_dim" class="file_dim"/>
+                            <input type="hidden" id="file_width" name="file_width" class="file_width" />
+                            <input type="hidden" id="file_height" name="file_height" class="file_height" />
+                            <input type="hidden" id="x1" name="x1" class="x1" />
+                            <input type="hidden" id="y1" name="y1" class="y1"/>
+                            <input type="hidden" id="x2" name="x2" class="x2" />
+                            <input type="hidden" id="y2" name="y2" class="y2" />
+                            <input type="hidden" id="image_canvas" name="image_canvas" class="image_canvas" />
+                        </div>
+                        <!-- 原始显示图层开始 -->
+                        <div class="preview_src" id="preview_src"><img class="preview" src="style/lib/jcrop/icon_dot.jpg"/></div>
+                        <!-- 裁切完成开始 -->
+                        <input type="button" value="裁切" class="pure-button pure-button-primary crop_image" />
+                        <!-- 裁切完成结束 -->
+                        <!-- 原始显示图层结束 -->
+                        <div class="vspace"></div>
+                        <!-- 裁切后显示图层开始 -->
+                        <div class="preview_dest" id="preview_dest"><img class="preview" src="style/lib/jcrop/icon_dot.jpg"/>
+                        </div>
+                        <!-- 裁切后显示图层结束 -->
+                        <!-- 提交上传开始 -->
+                        <input type="button" value="保存" class="pure-button pure-button-primary submit_form" />
+                        <!-- 提交上传结束 -->
+                    </div>
+                    <!-- 裁切参数和显示图层结束 -->
+              </form>
+            </div>
+        </div>
+        <a href="javascript:void(0)" class="side_tiggeer">三</a>
+    </div>
+    <!-- 侧边栏开始 -->
+    <div class="side_bar">
+       <div class="pure-menu pure-menu-open">
+            <ul>
+                <li><a href="#">马云雪</a></li>
+                <li><a href="#">我的提问 ></a></li>
+                <li><a href="coin.html">我的账户 ></a></li>
+                <li><a href="#">设置 ></a></li>
+            </ul>
+       </div>
+    </div>
+    <!-- 侧边栏结束 -->
+</article>
+<!--主体内容结束-->
+<script src="javascript/lib/jquery/jquery.min.js"></script>
+<script src="javascript/lib/jcrop/jquery.jcrop.mobile.js"></script>
+<script src="javascript/lib/jcrop/jcrop.mine.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('.submit_form').on('click',function(){
+        sjcrop.checkForm();
+    });
+    //监听change
+    $('.image_uploadForm .image_file').on('change',function(){
+        sjcrop.fileSelectHandler();
+    });
+    var flag = true;
+    $('.side_tiggeer').on('click',function(){
+        if(flag){
+            $('.photo_page .wrapper').addClass('wrap_trigger');
+            $(".side_bar").addClass('animated slideInLeft').show();
+            flag = false;
+        }else{
+            $('.photo_page .wrapper').removeClass('wrap_trigger');
+            $(".side_bar").removeClass('animated slideInLeft').hide();
+            flag = true;
+        }
+    });
+});
+</script> 
+</body>
+</html>

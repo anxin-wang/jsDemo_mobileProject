@@ -1,0 +1,64 @@
+/*登陆页面*/
+.login_page{margin-top:0;}
+.login_page h1{margin:0;text-align:center;clear:both;overflow:hidden;}
+.login_page .logo{display:inline-block;width:50%;height:50%;margin-top:.7em;margin-bottom:1em;}
+.login_page .logo img{max-width:100%;}
+.login_page .md_login{text-align:center;}
+.login_page .login_form{width:85%;margin:0 auto;}
+.login_page .login_form input.cInput{border:0;background:#9fd9fe;color:#fafafa;width:100%;border-radius:.4em;font-size:.8em;}
+.login_page .login_form input.cInput::-webkit-input-placeholder{color: #fafafa;}
+.login_page .login_form input.cInput:-moz-placeholder{color: #fafafa;}
+.login_page .login_form input.username{margin-bottom:1em;background:url(../../images/user/login_icon.png) no-repeat 0.5em 0.5em #9fd9fe;padding-left:3em;}
+.login_page .login_form input.password{background:url(../../images/user/login_icon.png) no-repeat 0.5em -2em #9fd9fe;padding-left:3em;}
+.login_page .login_form .register,.login_page .login_form .forgot_pwd{color:#fafafa;font-size:.6em;text-decoration:none;}
+.login_page .login_form input.btn_login{width:100%;border:0;color:#fafafa;border-radius:.7em;}
+/*我的账户*/
+.account_page .account_menu{clear:both;overflow:hidden;width:99%;border:0;}
+.account_page .account_menu li{clear:both;overflow:hidden;margin-bottom:.2em;}
+.account_page .account_menu li i{font-style:normal;color:#ff6666;}
+.account_page .account_menu li a{display:block;height:3em;color:#333;line-height:3em;background:#fff;padding:0 .75em;}
+.account_page .account_menu li a:hover{background:#ededed;}
+
+.account_page .coin_count{clear:both;overflow:hidden;width:80%;margin:0 auto;background:#fff;border:1px solid #ddd;text-align:center;}
+.account_page .coin_count h3{font-size:1em;color:#bcbcbc;font-weight:normal;}
+.account_page .coin_count .pure-button{color:#fff;}
+.account_page .coin_count p{font-size:.8em;color:#bcbcbc;}
+.account_page .coin_count p i{font-style:normal;color:#ff6666;}
+
+.account_page .paper_count{clear:both;overflow:auto;min-height:640px;height:100%;width:95%;margin:0 auto;}
+.account_page .paper_count li{background:#fff;border:1px solid #ddd;padding:.7em;margin-bottom:1em;}
+.account_page .paper_count li h3{padding:0;margin:0;font-size:1em;font-weight:normal;}
+.account_page .paper_count li span{color:#bcbcbc;font-size:.5em;}
+.account_page .paper_count li p{color:#333;font-size:.7em;margin:0;padding:0;margin-top:.3em;}
+
+
+/**hack 媒介查询开始**/
+@media screen and (-webkit-max-device-pixel-ratio: 1.4) and (max-width: 480px), screen and (max-device-pixel-ratio: 1.4) and (max-width: 480px){
+
+}
+/*480屏幕样式 Mobile端样式调整*/
+@media screen and (max-width: 480px){
+
+}
+/*320x480屏幕*/
+@media screen and (max-width: 600px) {
+	.register_page .form_group .code{margin-left:1em;width:50%;}
+}
+/*pc桌面*/
+@media screen and (min-width: 1024px) {
+	.layout{width:1000px;}
+	.login_page .form_group .register{margin-left:6em;}
+	.login_page .form_group .fogot_pwd{margin-right:6em;}
+	.login_page .form_group .btn_login{width:85%;}
+	.register_page .form_group .code{margin-left:4.5em;}
+	.register_page .form_group .btn_register{width:80%;}
+}
+/**hack 媒介查询结束**/
+
+
+
+
+
+
+
+
