@@ -1,0 +1,19 @@
+.img-select ul {
+  margin: 0;
+  padding: 0;
+}
+.img-select li {
+  list-style: none;
+  text-align: center;
+  border: 1px solid #F7F7F7;
+  padding: 5% 5% 2%;
+}
+.img-select p {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.img-select li.selected {
+  border: 1px solid #106DF0;
+  background: url(../img/corner.png) right bottom no-repeat;
+  background-size: 20%;
+}

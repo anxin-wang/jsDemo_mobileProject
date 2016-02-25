@@ -1,0 +1,351 @@
+li {
+    list-style: none;
+}
+ul{
+    margin:0;
+    padding:0;
+}
+body {
+    font-family: "Microsoft YaHei", "Arial", "Helvetica";
+    font-size: 100%;
+    font-weight:normal;
+    -webkit-text-size-adjust: none;
+    min-width: 320px;
+}
+.clearfix:before,.clearfix:after{
+    content:"";
+    display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+.btn-primary{
+    background: #e94643;
+    border: 1px solid #e94643;
+    margin: 0px 4%;
+    width: 92%;
+}
+
+.btn-primary:hover{
+    background: #e94643;
+    border: 1px solid #e94643;
+}
+.btn-blue{
+    background: #e94643;
+    border: 1px solid #e94643;
+    margin: 0px 4%;
+    width: 92%;
+    color:#fff;
+}
+.btn-blue:hover{
+    background: #e94643;
+    border: 1px solid #e94643;
+}
+input::-webkit-input-placeholder {  color: #C8C7CD !important;  }
+input:-moz-placeholder {  color: #C8C7CD !important;  }
+input::-moz-placeholder {  color: #C8C7CD !important;  }
+input:-ms-input-placeholder {  color: #C8C7CD !important;  }
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.btn{
+    font-size: 2rem;
+}
+.form-group label {
+    font-family: "Microsoft YaHei", "Arial", "Helvetica";
+    font-size: 2rem;
+    color: #444444;
+    font-weight:normal;
+}
+
+.form-group input {
+    border:1px solid #D1D1D1;
+    height: 46px;
+    line-height: 46px;
+    font-size: 1.6rem;
+    background: #FFF;
+}
+.form-group select{
+    width:100%;
+    height:46px;
+    padding:0px 5px;
+    font-size: 1.6rem;
+}
+.form-group select option{
+    text-align: center;
+}
+.row{
+    margin-bottom:15px;
+}
+.row h6{
+    font-size:1.6rem;
+    height: 1.8rem;
+    line-height:1.8rem;
+}
+.row h6 i{
+    background: url(../img/icon.png) left top no-repeat;
+    width: 1.6rem;
+    height: 1.6rem;
+    display: inline-block;
+    margin-left: 7px;
+    background-size: 1.5rem auto;
+    vertical-align: middle;
+}
+.row h5{
+    font-size: 1.2rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.row.form{
+    padding:15px;
+}
+.row.header{
+    margin-bottom:0px;
+    position:relative;
+}
+.row.header h3{
+    position: absolute;
+    top: 1%;
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+.row.header h6{
+    position: absolute;
+    top: 44%;
+    font-size: 1.3rem;
+    color: rgba(255,255,255,0.4);
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+.row.header img{
+    width: 100%;
+    height: auto;
+}
+h3.legend{
+    height:2.5rem;
+    line-height: 2.5rem;
+    font-size:2.5rem;
+    margin-bottom:20px;
+    color:#e94643;
+}
+h3.legend.first{
+    margin-top:0px;
+}
+h3.legend em{
+    background:#e94643;
+    border:1px solid #e94643;
+    border-radius:5px;
+    display:inline-block;
+    width:10px;
+    height:2.7rem;
+    line-height: 2.5rem;
+    vertical-align: middle;
+    margin-right:10px;
+}
+.row.word{
+    margin-bottom:0px;
+}
+.get-verify-code .left{
+    float:left;
+    width:60%;
+}
+.get-verify-code .right{
+    float:right;
+    width:35%;
+
+}
+.get-verify-code .btn{
+    font-size: 1.6rem;
+    width: 100%;
+    background: #0F6EF0;
+    color:#fff;
+    padding:3px;
+}
+.form-group.confirm-read label{
+    font-size:1.6rem;
+}
+
+.error-message{
+    background:#FFCACA;
+    padding:8px;
+    color:#E70101;
+    font-size:1.5rem;
+    border:1px solid #E70101;
+    position: relative;
+}
+
+.checkbox-blue{
+    background: url(../img/checkbox.png) -22px 0px;
+    background-size:41px auto;
+    width:20px;
+    height:20px;
+    float:left;
+}
+.checkbox-blue.checked{
+    background: url(../img/checkbox.png) -1px 0px;
+    background-size: 41px auto;
+}
+/*radio-select*/
+ul.radio-select {
+    margin:0 -15px 15px;
+}
+
+.radio-select li .item{
+    border:1px solid #D1D1D1;
+    padding:10px 0;
+    text-align: center;
+    display: block;
+    color:#444444;
+    text-decoration: none;
+    font-size: 1.6rem;
+    margin: 5px 0;
+}
+.radio-select li .item:hover{
+    text-decoration: none;
+}
+.radio-select li.selected .item {
+    background: #FF9000;
+    color: #fff;
+}
+.checkbox-container{
+    height:20px;
+    font-size:1.5rem;
+
+}
+.checkbox-container.inline{
+    height: 46px;
+    padding: 14px 0;
+}
+.input-group .input-group-addon{
+    background-color: #fff;
+    padding: 6px 20px;
+    font-size: 1.6rem;
+}
+.form-control.left{
+    float:left;
+    width:20%;
+}
+.form-control.right{
+    float:right;
+    width:70%;
+}
+.telephone-num em{
+    float: left;
+    width: 8%;
+    text-align: center;
+    font-size: 2.5rem;
+    height: 52px;
+    line-height: 52px;
+}
+.telephone-num .left.dianhua{
+    width:42%;
+}
+.form-control.inline.quhao{
+    width:20%;
+}
+.form-control.inline.dianhua{
+    width:70%;
+}
+.telephone-num .fenji{
+    width:20%;
+}
+.form-group{
+    margin-left:10px;
+    margin-right:10px;
+}
+/*¹ö¶¯Í¼Æ¬*/
+.swiper-container {
+    width: 100%;
+    height: 290px;
+    background:#272E41;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background:#272E41;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-button-next,.swiper-button-prev{
+    font-size: 4rem;
+    font-family: Arial, Tahoma;
+    background: none;
+    color: #666;
+    font-weight: bold;
+}
+.swiper-pagination{
+    background:#272E41;
+}
+.swiper-pagination-bullet-active{
+    background: #fff;
+}
+.swiper-slide img{
+    width:75%;
+}
+/*Í¼Æ¬Ñ¡Ôñ*/
+.img-select{
+    margin-top:20px;
+}
+.img-select li{
+    text-align: center;
+    border:1px solid #eee;
+    padding:5% 5% 2%;
+}
+.img-select p{
+    font-size: 1.2rem;
+    margin:0;
+}
+.img-select li.selected{
+    border:1px solid #106DF0;
+    background:url(../img/corner.png) right bottom no-repeat;
+    background-size:20%;
+}
+.intro{
+    padding:5% 5% 0;
+}
+.intro h2{
+    font-size:2.5rem;
+    margin-bottom: 20px;
+}
+.intro li{
+    color:#545454;
+    margin-bottom:5px;
+    font-size:1.5rem;
+}
+.btn-container{
+    margin:8% 5% 2%;
+}
+.content{
+    margin-top:10px;
+    padding:5%;
+    font-size:1.4rem;
+    color:#545454;
+}
+.strongs{
+    color:black;
+    font-weight: bolder;
+}
+.rightDiv{
+    float:right;
+    font-size:1.5rem;
+}
+.confirm label{
+    font-size:1.5rem;
+}

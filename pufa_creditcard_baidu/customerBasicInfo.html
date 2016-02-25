@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>在线申请浦发信用卡</title>
+    <link type="text/css" href="bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet" media="all"/>
+    <link type="text/css" href="css/global.css" rel="stylesheet" media="all"/>
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row header">
+        <img src="img/header_bg_red.png"/>
+        <h3>申请校园青春卡（宁泽涛版）</h3>
+        <h6>请填写基本资料</h6>
+    </div>
+    <div class="row form">
+        <form>
+            <div class="form-group">
+                <label>姓名</label>
+                <input type="text" class="form-control" placeholder="请输入您的姓名">
+                <div class="error-message">您输入的姓名格式有误</div>
+            </div>
+            <div class="form-group">
+                <label>证件号码</label>
+                <input type="text" class="form-control" placeholder="请输入您的身份证号码">
+            </div>
+            <div class="form-group">
+                <label>手机号</label>
+                <input type="text" class="form-control"  placeholder="请输入11位常用手机号">
+            </div>
+            <div class="form-group">
+                <label>验证码</label>
+                <div class="get-verify-code clearfix">
+                    <div class="left"><input type="text" class="form-control"  placeholder="请输入6位验证码"></div>
+                    <div class="right"><input class="btn btn-default " type="button" value="获取验证码"></div>
+                </div>
+            </div>
+            <div class="form-group confirm-read">
+                <div class="checkbox-blue checked" id="isRead" onclick="removeMessage('isRead')"></div>
+                本人已阅读并同意遵守
+                <a href="treaty.htm">《上海浦东发展银行信用卡（个人卡）章程》</a>
+                <a href="treaty2.htm">《上海浦东发展银行信用卡（个人卡）领用合约》</a>
+                <a href="treaty3.htm">《上海浦东发展银行中国移动浦发银行联名信用卡领用合约》</a>
+                <a href="treaty4.htm">《中国移动浦发银行借贷合一联名卡领用合约》</a>
+                <a href="treaty5.htm">《上海浦东发展银行电子现金复合信用卡章程》</a>
+                <a href="treaty6.htm">《上海浦东发展银行信用卡业务主要收费项目表》</a>
+            </div>
+
+            <div style="height:100px;overflow-y: scroll;margin-bottom:20px;border:1px solid #999;">
+                <span class="strongs">声明及签署: <br></span>
+                <span class="strongs">1.本人/我们 知晓并同意，IC信用卡批准后，无论是否激活，均需支付工本费<span style="color:red;">（2016年8月31日前成功获批银联IC信用卡的客户，免收工本费）</span>。</span><br>
+                2.本人/我们知晓，如申请人非优悦会会员，信用卡中心都将按照申请时填写的信息提交优悦会进行会员注册，无论此次申请的优悦会浦发联名信用卡是否成功核发，该注册信息都将提供给优悦会。会员注册成功后，可自行致电优悦会客服热线修改资料。<br>
+                3.贵行将因业务或管理需要而采集、处理、传递及使用本人/我们的个人资料和信息，并可出于提供信用卡有关服务的目的，将本人/我们的资料、信息及信用状况披露给必要的第三方，范围限于信用卡联名（认同）卡合作方、贵行的分支机构、贵行的服务机构（包括账款催收服务机构）、代理人、外包作业机构、增值服务提供方等。<br>
+                <span class="strongs">4.本人/我们知晓并同意领用合约中列示的计息和收费的方式及标准,且知晓以上息费发生后将直接借记至信用卡账户。 </span><br>
+                5.本人/我们同意接受贵行通过电话、短信、电子邮件或宣传单页发送的银行相关信息。若有异议，请勾选：
+                <input type="checkbox" id="declareSign" name="declareSign" value="1" style="height: 16px;width: 16px;" > <br>
+                6.本人/我们知晓超限费收取形式、计算方式和关闭此项服务的权利信息，并同意开通超信用额度用卡服务功能。若同意请勾选：
+                <input type="checkbox" id="declareSign" name="declareSign" value="2" style="height: 16px;width: 16px;"> <br>
+                7.本人/我们知晓并同意浦发双币种信用卡的所有通过国际卡组织（VISA\MasterCard\JCB\American Express等）转接的外币交易按记账当日浦发银行公布的汇率转换为人民币记账，并以人民币还款。 <br>
+                8.若您申请的卡片未获批核，可能会核发其他卡片，若有异议，请勾选：
+                <input type="checkbox" id="declareSign" name="declareSign" value="3" style="height: 16px;width: 16px;"> <br>
+                9.本人确认，本人向贵行申领信用卡的申请资料包括通过网上申请输入的信息、本人以电话等方式要求补正的信息，以及以书面或影像等方式提供的证明文件等，所有申请资料均真实、准确、有效。本人在网上点击确认提交，即表明本人同意提交申领信用卡的申请。<br>
+                10.本人/我们同意并授权贵行查询和使用已录入中国人民银行金融信用信息基础数据库及其他合法设立的征信机构系统、银行间信贷咨询系统和其他合法设立的信息库的全部信息。
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block ">开始申请</button>
+        </form>
+    </div>
+</div>
+
+
+
+
+    <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/global.js"></script>
+</body>
+</html>
